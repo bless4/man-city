@@ -16,7 +16,7 @@ const MatchesBlock = ({match}) => {
                         
                      </div>
                       <div className="right">
-
+                           {match.final ? match.resultLocal: '-'}
                       </div>
                  </div>
                    
