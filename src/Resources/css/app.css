@@ -189,6 +189,8 @@ footer .footer_discl {
     color: #ffffff;
     transform: translate(260px,170px);
     position: absolute;
+    margin-top: -170px;
+  
 }
 
 .featured_player {
@@ -197,6 +199,7 @@ footer .footer_discl {
     background-size: contain !important;
     background-repeat: no-repeat !important;
     position: absolute;
+    margin-top: -150px;
 }
 .featured_first {
     position: absolute;
@@ -205,6 +208,7 @@ footer .footer_discl {
     font-size: 92px;
     text-transform: uppercase;
     padding: 0px 20px;
+    margin-top: -130px;
 }
 
 .featured_second {
@@ -214,6 +218,7 @@ footer .footer_discl {
     font-size: 92px;
     text-transform: uppercase;
     padding: 0px 20px;
+    margin-top: -125px;
 }
 
 /*=============================
