@@ -1,36 +1,36 @@
 import React, { Component } from 'react';
 import Stripes from '../../../Resources/images/stripes.png';
-import {Tag} from '../../ui/misc';
-import Reveal from  'react-reveal/Reveal';
+import { Tag } from '../../ui/misc';
+import Reveal from 'react-reveal/Reveal';
 import HomeCards from './cards';
-
 
 class MeetPlayers extends Component {
 
     state = {
-        show: false
-
+        show:false
     }
+
     render() {
         return (
-            // use React-Reveal is a call back function for meetPlayers annimation
             <Reveal
                 fraction={0.7}
                 onReveal={()=>{
                     this.setState({
                         show:true
                     })
-                }}>
-                 <div className="home_meetplayers"
-            style={{background: `#ffffff  url(${Stripes})`}}
+                }}
             >
-               <div className="container">
-                   <div className="home_meetplayers_wrapper">
-                       <div className="home_card-wrapper">
-                               <HomeCards/>
-                               show={this.state.show}
-                       </div>
-                       <div className="home_text_wrapper">
+                <div className="home_meetplayers"
+                    style={{ background: `#ffffff url(${Stripes})` }}
+                >
+                    <div className="container">
+                        <div className="home_meetplayers_wrapper">
+                            <div className="home_card_wrapper">
+                                <HomeCards
+                                    show={this.state.show}
+                                />
+                            </div>
+                            <div className="home_text_wrapper">
                                 <div>
                                     <Tag bck="#0e1731" size="100px" color="#ffffff" add={{
                                         display: 'inline-block',
@@ -47,7 +47,7 @@ class MeetPlayers extends Component {
                                         The
                                 </Tag>
                                 </div>
-                                  <div>
+                                <div>
                                     <Tag bck="#0e1731" size="100px" color="#ffffff" add={{
                                         display: 'inline-block',
                                         marginBottom: '20px',
@@ -72,13 +72,12 @@ class MeetPlayers extends Component {
                                 </Tag>
                                 </div>
                             </div>
-                   </div>
+                        </div>
+                    </div>
+                </div>
 
-               </div>
-            </div>
-       
             </Reveal>
-            
+
         );
     }
 }
