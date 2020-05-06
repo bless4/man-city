@@ -56,6 +56,7 @@ export const validate = (element) => {
     let error = [true,''];
 
     if(element.validation.email){
+        // validating and element if it has an @ symbol. a shorter way to make a validation
         const valid = /\S+@\S+\.\S+/.test(element.value);
         const message = `${!valid ? 'Must be a valid email':''}`;
         error = !valid ? [valid,message]: error;
